@@ -15,7 +15,6 @@
     </properties>
 
     <dependencies>
-        <!-- JUnit 5 for unit testing -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
@@ -26,14 +25,16 @@
 
     <build>
         <plugins>
-            <!-- Enable JUnit 5 platform -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.2.5</version>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.3.0</version>
                 <configuration>
-                    <!-- Disable JPMS module-path scanning for simplicity -->
-                    <useModulePath>false</useModulePath>
+                    <archive>
+                        <manifest>
+                            <mainClass>com.lahiru.Main</mainClass>
+                        </manifest>
+                    </archive>
                 </configuration>
             </plugin>
         </plugins>
