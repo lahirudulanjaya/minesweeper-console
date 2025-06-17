@@ -4,6 +4,10 @@ import com.lahiru.model.Position;
 import com.lahiru.view.BoardRenderer;
 import com.lahiru.view.CLIView;
 
+
+/**
+ * Runs a single Minesweeper game session using the controller and CLI view.
+ */
 public class GameSessionRunner {
     private final GameController controller;
     private final CLIView view;
