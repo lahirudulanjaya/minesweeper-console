@@ -60,10 +60,6 @@ src/
     └── ...           # Unit tests
 ```
 
-## 📜 License
-
-This project is licensed under the MIT License.
-
 ## 🎯 Gameplay Details
 
 - The game begins by prompting the user for:
