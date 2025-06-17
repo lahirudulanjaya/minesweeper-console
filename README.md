@@ -16,6 +16,14 @@ A command-line Java implementation of the classic Minesweeper game.
 - Maven
 - JUnit 5
 
+## 🖥️  Environment Requirements
+
+| Component | Minimum Version | Notes |
+|-----------|-----------------|-------|
+| Operating System | Windows 10/11, macOS 12 + (Monterey +), any modern Linux distro | Pure JVM app—no native libraries. |
+| JDK | 17 | Works with any vendor build (Temurin, Oracle, Microsoft, etc.). |
+| Maven | 3.9 | Used for build, test and packaging. |
+
 ## ▶️ Running the Game
 
 ### Prerequisites
@@ -47,7 +55,7 @@ src/
 │   ├── controller/   # Game logic and MinePlacer
 │   ├── view/         # CLI rendering and I/O
 │   ├── util/         # Preconditions
-│   └── MainApp.java  # Main entry point
+│   └── Main.java     # Main entry point
 ├── test/java/com/lahiru/
     └── ...           # Unit tests
 ```
